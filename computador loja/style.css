@@ -1,0 +1,289 @@
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+ul li{
+list-style: none;
+}
+li{
+    padding: 5px;
+    position: relative;
+}
+li::after{
+    content: " ";
+    display: block;
+    position: absolute;
+    
+}
+
+.columnColors{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+   
+}
+
+@keyframes revelation{
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    
+}
+
+.red{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color:#ED484C;
+    animation: revelation 2s forwards;
+   
+}
+.yellow{
+   
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #ECC247;
+    animation: revelation2 2s forwards;
+}
+
+.green-lemon{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #9AEA49;
+    opacity: 0.5;
+    /* animation: revelation 2s forwards ;
+    animation-delay: 1s; */
+}
+.green{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #49EB74;
+    /* animation: revelation 2s forwards ;
+    animation-delay: 1.5s; */
+}
+.ligth-blue{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #47EBEA;
+    /* animation: revelation 2s forwards ;
+    animation-delay: 2ms; */
+}
+.blue{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #4B71EE;
+    /* animation: revelation 2s forwards ;
+    animation-delay: 2.5ms; */
+}
+.purple{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #9C4AED;
+    /* animation: revelation 2s forwards ;
+    animation-delay: 3ms; */
+}
+
+.pink{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #ee6bda;
+}
+.welcome{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.ballFalling{
+    animation: ballFalling 2s forwards ;
+}
+.ballFalling::after{
+    content:" ";
+    display: block;
+    width: 25px;
+    height: 25px;
+    border-radius: 20px;
+   background-color: black;
+    position: absolute;
+   
+    
+}
+
+@keyframes ballFalling{
+    0%{
+       transform: translateY(-300px);
+        opacity: 0;
+    }
+    50%{
+        top: -150px;
+        opacity: 0.8;
+    }
+    100%{
+        top: 0px;
+        opacity: 0;
+    }
+}
+
+@keyframes ballExplode{
+    0%{
+        width: 0px;
+        height: 0px;
+    }
+    50%{
+        width: 50%;
+        height: 50%;
+    }
+    100%{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.explose{
+    animation: ballExplode 2s forwards;
+}
+.ballExplose::after{
+    content: " ";
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    display: block;
+    border-radius: 10px;
+    position: absolute;
+}
+
+
+.red .ballExplose::after, .ballFalling1::after    {
+    background-color:#ED484C;
+    
+}
+.yellow .ballExplose::after, .ballFalling2::after {
+    background-color: #ECC247;
+}
+.green-lemon .ballExplose::after, .ballFalling3::after {
+    background-color: #9AEA49;
+}
+.green .ballExplose::after, .ballFalling4::after {
+    background-color: #49EB74;
+}
+.ligth-blue .ballExplose::after, .ballFalling5::after {
+    background-color: #47EBEA;
+}
+.blue .ballExplose::after, .ballFalling6::after {
+    background-color: #4B71EE;
+}
+.purple .ballExplose::after, .ballFalling7::after {
+    background-color: #ee6bda;
+}
+.pink .ballExplose::after, .ballFalling8::after {
+    background-color: #ee6bda;
+}
+
+.ballFalling2{
+    animation-delay: 0.5s;
+}
+
+.ballFalling3{
+    animation-delay: 1s;
+}
+.ballFalling4{
+    animation-delay: 1.5s;
+}
+.ballFalling5{
+    animation-delay: 2s;
+}
+.ballFalling6{
+    animation-delay: 2.5s;
+}
+.ballFalling7{
+    animation-delay: 3s;
+}
+.ballFalling8{
+    animation-delay: 3.5s;
+}
+
+.ball1::after{
+    top: -30px;
+}
+
+.ball2::after{
+    top: -25px;
+    right: -10px;
+}
+
+.ball3::after{
+    top: -10px;
+    right: -25px;
+}
+
+
+.ball4::after{
+    top: 10px;
+    right: -30px;
+}
+
+
+.ball5::after{
+    top: 30px;
+    right: -25px;
+}
+
+.ball6::after{
+    top: 45px;
+    right: -10px;
+}
+
+.ball7::after{
+    top:50px;
+    
+}
+
+.ball8::after{
+    top: 45px;
+    left: -15px;
+}
+
+.ball9:after{
+    top: 30px;
+    left: -30px;
+}
+
+.ball10::after{
+    top: 10px;
+   left: -35px;
+}
+
+.ball11::after{
+    top: -10px;
+    left: -30px;
+}
+
+.ball12::after{
+    top: -25px;
+   left: -15px;
+}
+
+

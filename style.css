@@ -1,0 +1,383 @@
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+
+ul li{
+    list-style: none;
+}
+li{
+    padding: 5px;
+    position: relative;
+}
+li{
+    content: " ";
+    display: block;
+    position: absolute;
+    
+}
+
+/* .columnColors{
+    display: flex;
+    height: 100vh;
+    position: relative;
+   
+}
+
+ @keyframes revelation{
+    0% {
+        width: 0;
+        opacity: 0;
+    }
+ 
+    75%{
+        width: 100%;
+        opacity: 1;
+    }
+    100%{
+        width: 100%;
+        opacity: 0;
+    }
+} 
+
+
+ 
+@keyframes aniFinal{
+    0% {
+        width: 0;
+       
+    }
+    100%{
+        width: 100%;
+        
+    }
+}
+.block{
+    width: 100%;
+    height: 100%;
+    animation: revelation 6s;
+}
+.block::after{
+width: 0;
+height: 100%;
+background: white;
+content: " ";
+display: block;
+animation: aniFinal 2s forwards;
+animation-delay: 4s;
+}
+.column{
+    width: 100%;
+    height: 100%;
+}  */
+
+/* .red{
+    background:#ED484C;  
+}
+.yellow{
+    background-color: #ECC247;
+}
+.green-lemon{
+    background-color: #9AEA49;
+}
+.green{
+    background-color: #49EB74;
+}  
+.ligth-blue{
+    background-color: #47EBEA;
+}
+.blue{
+    background-color: #4B71EE;
+}
+.purple{
+    background-color: #9C4AED;
+}
+
+.pink{
+    background-color: #ee6bda;
+}  */
+
+.welcome{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    /* desloca a div em 50% da sua própria largura para a esquerda e 50% da sua altura para cima */ 
+}
+.barLetter{
+    
+    font-family: 'poppins',sans-serif;
+    font-size: 30px;
+    height: 50px;
+    width: 30px;
+    animation: revelationWelcome 4s forwards;
+    position: absolute;
+    top: 10px;
+    z-index: 0;
+   
+}
+
+
+/* @keyframes revelationWelcome{
+    0% {
+        width: 0;
+        opacity: 0.7;
+    }
+    10%{
+        width: 15px;
+        opacity: 1;
+    }
+    30%{
+        width: 30px;
+        opacity: 0.7;
+    }
+ 
+    40%{
+       transform: translateX(0);
+       background-color: transparent;
+    }
+    60%{
+        transform: translateX(100px);
+        background-color: transparent;
+        color: black;
+    }
+ 100%{
+    transform: translateX(100px);
+    background-color: transparent;
+    color: transparent;
+ }
+    
+} */
+/* .barLetter::after{
+    content: "";
+    display: block;
+    
+
+} */
+
+/* .barLetter::after {
+    content: "";
+    display: block;
+    height: 60px;
+    width: 30px;
+    top: -1px;
+    position: absolute;
+    animation: aniFinal 1s ;
+    animation-delay: 3s;
+    background: #fff;
+    
+} 
+
+
+@keyframes aniFinal{
+    0% {
+        width: 0;
+       
+    }
+    100%{
+        width: 30px;
+        background-color: transparent;
+    }
+   
+} */
+
+/* .animationSmile{
+    animation: revelationWelcome 4s forwards, smile 2s forwards 4s;
+
+}
+
+
+@keyframes smile{
+    0%{
+        font-size: 40px;
+        color: black;
+        transform: translateX(0);
+    }
+    50%{
+        transform: rotate(90deg);
+        color: black;
+    }
+    
+    100%{
+        transform: translateX(300px);
+        color: transparent;
+    }
+}
+@keyframes jumpingLetter{
+    0%{
+        font-size: 60px;
+        background-color: transparent;
+
+    }
+    100%{
+        font-size: 30px;
+        background-color: transparent;
+    }
+}
+
+
+
+.jumpingLetter1{
+    animation: jumpingLetter 0.5s forwards ;
+}
+.jumpingLetter2{
+animation: jumpingLetter 0.5s forwards 0.5s;
+}
+.jumpingLetter3{
+    animation: jumpingLetter 0.5s forwards  1s;
+}
+.jumpingLetter4{
+    animation: jumpingLetter 0.5s forwards 1.5s;
+}
+.jumpingLetter5{
+    animation: jumpingLetter 0.5s forwards 2s ;
+}
+.jumpingLetter6{
+    animation: jumpingLetter 0.5s forwards 2.5s ;
+}
+.jumpingLetter7{
+    animation: jumpingLetter 0.5s forwards 3s;
+}
+.jumpingLetter8{      
+    animation: jumpingLetter 0.5s forwards 3.5s;
+} */
+/* .ballFalling{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute; 
+    transform: translateX(-9px);
+    opacity: 0;
+}
+@keyframes ballFalling{
+    0%{
+       top:-300px;
+        opacity: 0.8;
+    }
+  
+    25%{
+        top:-150px;
+        opacity: 0.5;
+    }
+   
+    100%{
+        top:0;
+        opacity: 0;
+    }
+} 
+ .ballFalling1{
+    animation: ballFalling 0.7s forwards ;
+} 
+.ballFalling2{
+    animation: ballFalling 0.7s forwards ;
+    animation-delay: 0.7s;
+}
+.ballFalling3{
+    animation: ballFalling 0.7s forwards ;
+    animation-delay: 1.4s;
+}
+.ballFalling4{
+    animation: ballFalling 0.7s forwards ;
+    animation-delay: 2.1s;
+}
+
+.ballFalling5{
+    animation: ballFalling 0.7s forwards ;
+    animation-delay: 2.8s;
+}
+.ballFalling6{
+    animation: ballFalling 0.7s forwards ;
+    animation-delay: 3.5s;
+}
+.ballFalling7{
+    animation: ballFalling 0.7s forwards ;
+    animation-delay: 4.2s;
+}
+.ballFalling8{
+    animation: ballFalling 0.7s forwards ;
+    animation-delay: 4.9s;
+}
+
+*/
+
+.ball{
+    background-color: aqua;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+
+}
+
+.ball1{
+    position: absolute;
+    top: -10px;
+    margin-left: 5px;
+}
+
+.ball2{
+    position: absolute;
+    top: -5px;
+    margin-left: 20px;
+}
+
+.ball3{
+    position: absolute;
+    top: 6px;
+    margin-left: 30px;
+}
+
+.ball4{
+    position: absolute;
+    top: 20px;
+    margin-left: 35px;
+}
+
+.ball5{
+    position: absolute;
+    top: 35px;
+    margin-left: 35px;
+}
+
+.ball6{
+    position: absolute;
+    top: 48px;
+    margin-left: 25px;
+}
+
+.ball7{
+    position: absolute;
+    top: 55px;
+    margin-left: 10px;
+}
+
+.ball8{
+    position: absolute;
+    top: 50px;
+    margin-left: -8px;
+}
+
+.ball9{
+    position: absolute;
+    top: 40px;
+    margin-left: -20px;
+}
+.ball10{
+    position: absolute;
+    top: 8px;
+    margin-left: -23px;
+}
+.ball11{
+    position: absolute;
+    top: 25px;
+    margin-left: -25px;
+}
+
+.ball12{
+    position: absolute;
+    top: -5px;
+    margin-left: -10px;
+}
