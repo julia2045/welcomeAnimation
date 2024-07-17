@@ -74,7 +74,7 @@ animation-delay: 4s;
     height: 100%;
 }  */
 
-/* .red{
+.red{
     background:#ED484C;  
 }
 .yellow{
@@ -98,7 +98,7 @@ animation-delay: 4s;
 
 .pink{
     background-color: #ee6bda;
-}  */
+} 
 
 .welcome{
     display: flex;
@@ -305,7 +305,7 @@ animation: jumpingLetter 0.5s forwards 0.5s;
 */
 
 .ball{
-    background-color: aqua;
+    
     width: 10px;
     height: 10px;
     border-radius: 50%;
